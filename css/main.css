@@ -1,0 +1,94 @@
+/* GLOBAL STYLES */
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: helvetica, arial, sans;
+  min-height: 100vh;
+}
+a {
+  color: #fff;
+}
+p {
+
+}
+h1 {
+  font-family: 'Raleway', helvetica, sans;
+  font-size: 7vw;
+}
+.content-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  padding-top: 10vh;
+  width: 100;
+}
+
+/* HEADER STYLES */
+.header {
+  background-color: #000;
+  position: fixed;
+  width: 100%;
+  z-index: 20;
+}
+.header-nav {
+  padding: 5vh 10px 5vh 0;
+  text-align: center;
+}
+.header-nav > li {
+  display: inline-block;
+  margin-left: 0;
+}
+.header li ~ li {
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  padding-left: 0.5em;
+}
+.header-nav a {
+  font-size: 0.9em;
+}
+.header-nav a:hover,
+.header-nav a:active {
+  color: #ed6e2f;
+}
+
+/* NAV STYLES */
+.nav-links a {
+  padding: 1vh;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* HERO STYLES */
+.full-hero {
+  background-color: #c7dbfc;
+  background-size: cover;
+  box-sizing: border-box;
+  height: 90vh;
+}
+.full-hero:after {
+  bottom: 2vh;
+  color: #fff;
+  content: "﹀";
+  font-size: 48px;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, 0);
+}
+.hero-image {
+  background-image: url(/images/zoewallace.jpeg);
+  background-position: center top;
+}
+.hero-content {
+  color: #fff;
+  font-size: 1.3em;
+  position: relative;
+  text-align: center;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.hero-content h1 {
+  margin-bottom: 0.2em;
+}
+
+
+/* FOOTER STYLES */
