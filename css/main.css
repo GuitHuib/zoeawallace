@@ -8,13 +8,17 @@ body {
 }
 a {
   color: #fff;
+  cursor: default;
+  text-decoration: none;
 }
 p {
-
+  line-height: 1.5em;
+  padding-bottom: 3vh;
 }
 h1 {
   font-family: 'Raleway', helvetica, sans;
   font-size: 7vw;
+  margin-bottom: 0.2em;
 }
 .content-container {
   display: flex;
@@ -54,7 +58,6 @@ h1 {
 /* NAV STYLES */
 .nav-links a {
   padding: 1vh;
-  text-decoration: none;
   text-transform: uppercase;
 }
 
@@ -90,5 +93,36 @@ h1 {
   margin-bottom: 0.2em;
 }
 
+/* BIO STYLES */
+
+.bio {
+  background-color: #7c8287;
+  padding: 1em 20vw 2vh;
+}
+.bio h1 {
+  font-size: 3vh;
+  text-align: center;
+  margin: 2vh 0;
+}
+
+/* SOCIAL LIKS STYLES */
+
+.social-links {
+  border-radius: 99px;
+  box-sizing: border-box;
+  font-size: 3em;
+  display: inline-block;
+}
 
 /* FOOTER STYLES */
+
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 5vh 0;
+  text-align: center;
+}
+.footer-nav a:hover,
+.footer-nav a:active {
+  color: #ed6e2f;
+}

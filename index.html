@@ -1,46 +1,21 @@
 ---
-# You don't need to edit this file, it's empty on purpose.
-# Edit theme's home layout instead if you wanna make some changes
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: default
 ---
 
-<div class="content-container">
 
   {% include full-hero.html %}
 
-  <div class="bio">
-    <h1>Biography</h1>
-    <p>
-      Zoë A. Wallace (formerly known as Zoë Holbrook) is a classical composer
-      and guitarist who is continually striving to broaden the repertoire for
-      instruments in an ensemble setting. She has performed in a number of
-      concerts as a soloist and in a duo throughout California, Illinois, and
-      Utah, and has had the pleasure of playing the premieres of such pieces as
-      Duet in A Major by Darlene Castro, Roots by Nicholas Denton-Protsack,
-      Vertex by Zoë Wallace, the west coast premiere of Distance and the Sea by
-      Stan Funicelli, and many others. Most recently, Zoë founded Nightingale
-      Ensemble and acts as the guitarist, resident composer, and artistic
-      director to continue her goal of expanding the repertoire for unusual
-      instrument pairings.
-   </p>
-   <p>
-     Zoë works in development for United States Artists, a non-profit
-     organization that supports artists across the country through Fellowship
-     grants. She received her Masters degree in classical guitar with Denis
-     Azabagic and her Bachelors degree at San Francisco Conservatory of Music
-     with Sergio Assad while also studying composition with Dr. Marc Mellits and
-     Dr. Ryan Brown.
-   </p>
-   <p>
-     Zoë has written pieces for such groups as the Fifth Wave Collective and
-     Nightingale Ensemble. She is currently published by Erebus Music.
-   </p>
-  </div>
-
-</div>
+  {% include bio.html %}
 
 
-<footer class="footer">
-  <h1>footer stuff</h1>
+
+<footer class="footer ">
+  <nav>
+    <ul class="footer-nav nav-links">
+      {% include nav-links.html %}
+    </ul>
+  </nav>
+  <a href="https://www.facebook.com/zoeawallacecomposer/?view_public_for=1481426395290245" class="social-links"><i class="fab fa-facebook"></i></a>
+
+
 </footer>
