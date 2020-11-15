@@ -20,6 +20,12 @@ h1 {
   font-size: 7vw;
   margin-bottom: 0.2em;
 }
+h2 {
+  font-size: 2vw;
+}
+.emphasis {
+  font-style: italic;
+}
 .content-container {
   display: flex;
   flex-direction: column;
@@ -59,6 +65,31 @@ h1 {
 .nav-links a {
   padding: 1vh;
   text-transform: uppercase;
+}
+
+/* SOCIAL LIKS STYLES */
+
+.social-links {
+  border-radius: 99px;
+  box-sizing: border-box;
+  font-size: 3em;
+  display: inline-block;
+}
+
+/* FOOTER STYLES */
+
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 2vh 0;
+  text-align: center;
+}
+.footer-nav li {
+  margin-bottom: 0.5vh;
+}
+.footer-nav a:hover,
+.footer-nav a:active {
+  color: #ed6e2f;
 }
 
 /* HERO STYLES */
@@ -105,24 +136,67 @@ h1 {
   margin: 2vh 0;
 }
 
-/* SOCIAL LIKS STYLES */
+/* COMPOSITION STYLES */
 
-.social-links {
-  border-radius: 99px;
+.compositions {
   box-sizing: border-box;
-  font-size: 3em;
-  display: inline-block;
+  padding-top: 1vh;
+  position: relative;
+}
+.compositions > div {
+  border: 2px solid #000;
 }
 
-/* FOOTER STYLES */
-
-.footer {
-  background-color: #000;
+.ensemble {
   color: #fff;
-  padding: 5vh 0;
-  text-align: center;
+  position: relative;
+  padding: 2vh 2vh;
 }
-.footer-nav a:hover,
-.footer-nav a:active {
-  color: #ed6e2f;
+.ensemble::before {
+  content: "";
+  background-image: url(/zoeawallace/images/duet.jpeg);
+  background-size: cover;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+.solo {
+  box-sizing: border-box;
+  padding: 2vh 2vh;
+  position: relative;
+}
+.solo::after {
+  content: "";
+  background-image: url(/zoeawallace/images/solo.jpeg);
+  background-size: cover;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+.upcoming {
+  padding: 2vh 2vh;
+  position: relative;
+}
+.upcoming::after {
+  content: "";
+  background-image: url(/zoeawallace/images/chicago.jpeg);
+  background-size: cover;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+.works-list {
+  padding: 2vh 0 0 2vw;
 }
