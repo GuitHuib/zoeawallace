@@ -12,7 +12,7 @@ a {
   text-decoration: none;
 }
 p {
-  line-height: 1.5em;
+  line-height: 2em;
   padding-bottom: 3vh;
 }
 h1 {
@@ -21,7 +21,7 @@ h1 {
   margin-bottom: 0.2em;
 }
 h2 {
-  font-size: 2vw;
+  font-size: 3vw;
 }
 .emphasis {
   font-style: italic;
@@ -30,8 +30,10 @@ h2 {
   display: flex;
   flex-direction: column;
   flex: 1 1 auto;
-  padding-top: 10vh;
+  padding: 7vh 0 0 0;
+  position: relative;
   width: 100;
+  margin: 0;
 }
 
 /* HEADER STYLES */
@@ -42,7 +44,7 @@ h2 {
   z-index: 20;
 }
 .header-nav {
-  padding: 5vh 10px 5vh 0;
+  padding: 3vh 10px 3vh 0;
   text-align: center;
 }
 .header-nav > li {
@@ -97,7 +99,7 @@ h2 {
   background-color: #c7dbfc;
   background-size: cover;
   box-sizing: border-box;
-  height: 90vh;
+  height: 94vh;
 }
 .full-hero:after {
   bottom: 2vh;
@@ -140,11 +142,10 @@ h2 {
 
 .compositions {
   box-sizing: border-box;
-  padding-top: 1vh;
   position: relative;
 }
 .compositions > div {
-  border: 2px solid #000;
+  border: 1px solid #000;
 }
 
 .ensemble {
@@ -199,4 +200,18 @@ h2 {
 }
 .works-list {
   padding: 2vh 0 0 2vw;
+}
+
+/* NIGHTINGALE STYLES */
+
+.nightingale {
+  background-color: #d7d9db;
+  box-sizing: border-box;
+  padding: 4vh 15vw 4vh 15vw;
+  margin-bottom: -2vh;
+  height: 100%;
+  width: 100%;
+}
+.nightingale-info {
+  padding: 3vh 0 0 0;
 }
