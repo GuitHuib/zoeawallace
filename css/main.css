@@ -12,6 +12,7 @@ a {
   text-decoration: none;
 }
 p {
+  font-size: 1.3vh;
   line-height: 2em;
   padding-bottom: 3vh;
 }
@@ -23,6 +24,9 @@ h1 {
 h2 {
   font-size: 3vw;
 }
+ul {
+  list-style: none;
+}
 .emphasis {
   font-style: italic;
 }
@@ -31,7 +35,6 @@ h2 {
   flex-direction: column;
   flex: 1 1 auto;
   padding: 7vh 0 0 0;
-  position: relative;
   width: 100;
   margin: 0;
 }
@@ -74,8 +77,10 @@ h2 {
 .social-links {
   border-radius: 99px;
   box-sizing: border-box;
+  cursor: pointer;
   font-size: 3em;
   display: inline-block;
+  margin: 0.5vh 1.2vw;
 }
 
 /* FOOTER STYLES */
@@ -84,7 +89,7 @@ h2 {
   background-color: #000;
   color: #fff;
   padding: 2vh 0;
-  text-align: center;
+  text-align: left;
 }
 .footer-nav li {
   margin-bottom: 0.5vh;
@@ -92,6 +97,10 @@ h2 {
 .footer-nav a:hover,
 .footer-nav a:active {
   color: #ed6e2f;
+}
+.copyright {
+  font-size: 1vh;
+  margin-left: 1.2vw;
 }
 
 /* HERO STYLES */
@@ -126,10 +135,10 @@ h2 {
   margin-bottom: 0.2em;
 }
 
-/* BIO STYLES */
+/* BIO STYLES #7c8287 */
 
 .bio {
-  background-color: #7c8287;
+  background-color: #d7d9db;
   padding: 1em 20vw 2vh;
 }
 .bio h1 {
@@ -214,4 +223,62 @@ h2 {
 }
 .nightingale-info {
   padding: 3vh 0 0 0;
+  border-bottom: 1px solid #000;
+}
+.poem {
+  margin-top: 3vh;
+  text-align: center;
+  border-bottom: 1px solid #000;
+}
+.learn-more {
+  margin-top: 3vh;
+}
+
+
+/* INFO LINKS STYLES */
+.info-links {
+  text-align: center;
+}
+.info-links > li {
+  display: inline-block;
+}
+.info-links > li a {
+  color: #000;
+  margin: 0 2vw;
+}
+.info-links > li a:hover,
+.info-links > li a:active {
+  color: #ed6e2f;
+}
+.info-links li ~ li {
+  border-left: 1px solid #000;
+}
+/* MEDIA STYLES */
+
+.media-gallery {
+  background-color: #d7d9db;
+
+  padding: 0 2vw;
+}
+.media-row {
+  border-top: 1px solid #000;
+  height: 315px;
+  padding: 2vh 0;
+  width: 100%;
+}
+.description{
+  box-sizing: border-box;
+  display: block;
+  float: left;
+  height: 100%;
+  padding-top: 8vh;
+  text-align: center;
+  width: 38%;
+}
+.description h2 {
+  margin-bottom: 1vh;
+}
+.media {
+  float: right;
+  min-width: 560px;
 }
