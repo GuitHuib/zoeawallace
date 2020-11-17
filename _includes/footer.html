@@ -1,10 +1,16 @@
 <footer class="footer ">
   <nav>
     <ul class="footer-nav nav-links">
-      {% include nav-links.html %}
+
     </ul>
   </nav>
   <a href="https://www.facebook.com/zoeawallacecomposer/?view_public_for=1481426395290245" class="social-links"><i class="fab fa-facebook"></i></a>
-  <p class="copyright">© 2020 Zoë A. Wallace</p>
+  <p class="copyright">
+    {% if page.photo_credit %}
+      © 2020 Zoë A. Wallace | Photo courtesy of {{ page.photo_credit }}
+    {% else %}
+      © 2020 Zoë A. Wallace
+    {% endif %}
+  </p>
 
 </footer>

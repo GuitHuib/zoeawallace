@@ -34,7 +34,7 @@ ul {
   display: flex;
   flex-direction: column;
   flex: 1 1 auto;
-  padding: 7vh 0 0 0;
+  padding: 7.2vh 0 0 0;
   width: 100;
   margin: 0;
 }
@@ -59,7 +59,7 @@ ul {
   padding-left: 0.5em;
 }
 .header-nav a {
-  font-size: 0.9em;
+  font-size: 1.2vh;
 }
 .header-nav a:hover,
 .header-nav a:active {
@@ -68,7 +68,7 @@ ul {
 
 /* NAV STYLES */
 .nav-links a {
-  padding: 1vh;
+  padding: 1vw;
   text-transform: uppercase;
 }
 
@@ -80,7 +80,7 @@ ul {
   cursor: pointer;
   font-size: 3em;
   display: inline-block;
-  margin: 0.5vh 1.2vw;
+  margin: 0.5vh 1.2vw 1vh;
 }
 
 /* FOOTER STYLES */
@@ -89,7 +89,7 @@ ul {
   background-color: #000;
   color: #fff;
   padding: 2vh 0;
-  text-align: left;
+  text-align: center;
 }
 .footer-nav li {
   margin-bottom: 0.5vh;
@@ -103,13 +103,18 @@ ul {
   margin-left: 1.2vw;
 }
 
-/* HERO STYLES */
-.full-hero {
-  background-color: #c7dbfc;
+/* HOME STYLES */
+.home {
+  background-color: #d7d9db;
+  padding-top: 0;
+  margin-top: -7.2vh;
+}
+.intro {
   background-size: cover;
   box-sizing: border-box;
-  height: 94vh;
+  height: 40vh;
 }
+/*
 .full-hero:after {
   bottom: 2vh;
   color: #fff;
@@ -119,17 +124,18 @@ ul {
   position: absolute;
   transform: translate(-50%, 0);
 }
-.hero-image {
+*/
+.home-image {
   background-image: url(/zoeawallace/images/ZoeWallace.jpeg);
   background-position: center top;
 }
-.hero-content {
-  color: #fff;
-  font-size: 1.3em;
-  position: relative;
+.home-content {
+  border-bottom: 1px solid #000;
+  color: #000;
+  padding-top: 3vh;
+  margin: 0 15vw;
   text-align: center;
-  top: 50%;
-  transform: translate(0, -50%);
+  width: 70%
 }
 .hero-content h1 {
   margin-bottom: 0.2em;
@@ -139,7 +145,7 @@ ul {
 
 .bio {
   background-color: #d7d9db;
-  padding: 1em 20vw 2vh;
+  padding: 3vh 15vw 2vh;
 }
 .bio h1 {
   font-size: 3vh;
@@ -150,38 +156,47 @@ ul {
 /* COMPOSITION STYLES */
 
 .compositions {
+  background-color: rgba(47, 71, 156, 0.75);
   box-sizing: border-box;
   position: relative;
+  text-shadow:
+   -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
 }
 .compositions > div {
   border: 1px solid #000;
 }
-
 .ensemble {
   color: #fff;
   position: relative;
   padding: 2vh 2vh;
 }
+
 .ensemble::before {
   content: "";
-  background-image: url(/zoeawallace/images/duet.jpeg);
+  background-image: url(/zoeawallace/images/ensemble3.jpeg);
   background-size: cover;
-  opacity: 0.7;
   position: absolute;
+  opacity: 0.7;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
   z-index: -1;
 }
+
 .solo {
   box-sizing: border-box;
+  color: #fff;
   padding: 2vh 2vh;
   position: relative;
 }
+
 .solo::after {
   content: "";
-  background-image: url(/zoeawallace/images/solo.jpeg);
+  background-image: url(/zoeawallace/images/zoe2.jpeg);
   background-size: cover;
   opacity: 0.7;
   position: absolute;
@@ -191,6 +206,7 @@ ul {
   right: 0;
   z-index: -1;
 }
+
 .upcoming {
   padding: 2vh 2vh;
   position: relative;
@@ -221,14 +237,19 @@ ul {
   height: 100%;
   width: 100%;
 }
+.nightingale-logo img {
+  width: 95%;
+}
 .nightingale-info {
-  padding: 3vh 0 0 0;
   border-bottom: 1px solid #000;
+  border-top: 1px solid #000;
+  margin-top: 3vh;
+  padding: 3vh 0 0 0;
 }
 .poem {
+  border-bottom: 1px solid #000;
   margin-top: 3vh;
   text-align: center;
-  border-bottom: 1px solid #000;
 }
 .learn-more {
   margin-top: 3vh;
@@ -257,7 +278,6 @@ ul {
 
 .media-gallery {
   background-color: #d7d9db;
-
   padding: 0 2vw;
 }
 .media-row {
@@ -271,14 +291,20 @@ ul {
   display: block;
   float: left;
   height: 100%;
-  padding-top: 8vh;
+  padding-top: 5vh;
   text-align: center;
   width: 38%;
 }
 .description h2 {
-  margin-bottom: 1vh;
+  margin-bottom: 1.5vh;
 }
 .media {
   float: right;
   min-width: 560px;
+}
+.instr {
+}
+.perf {
+  line-height: 1.5em;
+  padding: 1.5vh;
 }

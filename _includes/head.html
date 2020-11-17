@@ -1,6 +1,10 @@
 <head>
   <meta charset="utf-8">
-  <title>Zoe's site</title>
+  {% if page.title %}
+    <title>{{ page.title }} | Zoë Wallace</title>
+  {% else %}
+    <title>Zoe Wallace</title>
+  {% endif %}
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap">
