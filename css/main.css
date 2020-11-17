@@ -12,17 +12,17 @@ a {
   text-decoration: none;
 }
 p {
-  font-size: 1.3vh;
+  font-size: 1rem;
   line-height: 2em;
   padding-bottom: 3vh;
 }
 h1 {
   font-family: 'Raleway', helvetica, sans;
-  font-size: 7vw;
+  font-size: 4.5rem;
   margin-bottom: 0.2em;
 }
 h2 {
-  font-size: 3vw;
+  font-size: 2rem;
 }
 ul {
   list-style: none;
@@ -35,8 +35,18 @@ ul {
   flex-direction: column;
   flex: 1 1 auto;
   padding: 7.2vh 0 0 0;
-  width: 100;
+  width: 100%;
   margin: 0;
+}
+
+@media (min-width: 1100px) {
+  html{
+    background-color: #d7d9db;
+  }
+  .content-container {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
 }
 
 /* HEADER STYLES */
@@ -133,7 +143,7 @@ ul {
   border-bottom: 1px solid #000;
   color: #000;
   padding-top: 3vh;
-  margin: 0 15vw;
+  margin: 0 8.5rem;
   text-align: center;
   width: 70%
 }
@@ -145,7 +155,7 @@ ul {
 
 .bio {
   background-color: #d7d9db;
-  padding: 3vh 15vw 2vh;
+  padding: 3vh 8.5rem 2vh;
 }
 .bio h1 {
   font-size: 3vh;
@@ -157,7 +167,6 @@ ul {
 
 .compositions {
   box-sizing: border-box;
-  position: relative;
 }
 .compositions > div {
   border: 1px solid #000;
@@ -168,7 +177,7 @@ ul {
   background-position: center;
   color: #000;
   position: relative;
-  padding: 2vh 2vh;
+  padding: 2vh 1.7rem;
 }
 .ensemble p {
   padding-bottom: 1.2vh;
@@ -194,7 +203,7 @@ ul {
   background-size: cover;
   box-sizing: border-box;
   color: #000;
-  padding: 2vh 2vh;
+  padding: 2vh 1.7rem;
   position: relative;
 }
  /*
@@ -210,7 +219,7 @@ ul {
   z-index: -1;
 }
 */
-
+/*
 .upcoming {
   padding: 2vh 2vh;
   position: relative;
@@ -227,8 +236,9 @@ ul {
   right: 0;
   z-index: -1;
 }
+*/
 .works-list {
-  padding: 2vh 0 0 2vw;
+  padding: 2vh 0 0 1.7rem;
 }
 
 /* NIGHTINGALE STYLES */
@@ -236,7 +246,7 @@ ul {
 .nightingale {
   background-color: #d7d9db;
   box-sizing: border-box;
-  padding: 4vh 15vw 4vh 15vw;
+  padding: 4rem 8.5rem;
   margin-bottom: -2vh;
   height: 100%;
   width: 100%;
@@ -282,7 +292,7 @@ ul {
 
 .media-gallery {
   background-color: #d7d9db;
-  padding: 0 2vw;
+  padding: 0 1.8rem;
 }
 .media-row {
   border-top: 1px solid #000;
