@@ -156,49 +156,52 @@ ul {
 /* COMPOSITION STYLES */
 
 .compositions {
-  background-color: rgba(47, 71, 156, 0.75);
   box-sizing: border-box;
   position: relative;
-  text-shadow:
-   -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-     1px 1px 0 #000;
 }
 .compositions > div {
   border: 1px solid #000;
 }
 .ensemble {
-  color: #fff;
+  background-image: url(/zoeawallace/images/ensemble-split.jpeg);
+  background-size: cover;
+  background-position: center;
+  color: #000;
   position: relative;
   padding: 2vh 2vh;
 }
+.ensemble p {
+  padding-bottom: 1.2vh;
+}
 
+/*
 .ensemble::before {
   content: "";
-  background-image: url(/zoeawallace/images/ensemble3.jpeg);
+  background-image: url(/zoeawallace/images/ensemble-split.jpeg);
   background-size: cover;
   position: absolute;
-  opacity: 0.7;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
   z-index: -1;
 }
+*/
 
 .solo {
+  background-image: url(/zoeawallace/images/solo-split.jpeg);
+  background-position: center;
+  background-size: cover;
   box-sizing: border-box;
-  color: #fff;
+  color: #000;
   padding: 2vh 2vh;
   position: relative;
 }
-
+ /*
 .solo::after {
   content: "";
-  background-image: url(/zoeawallace/images/zoe2.jpeg);
+  background-image: url(/zoeawallace/images/solo-split.jpeg);
   background-size: cover;
-  opacity: 0.7;
   position: absolute;
   top: 0;
   left: 0;
@@ -206,6 +209,7 @@ ul {
   right: 0;
   z-index: -1;
 }
+*/
 
 .upcoming {
   padding: 2vh 2vh;
@@ -300,9 +304,7 @@ ul {
 }
 .media {
   float: right;
-  min-width: 560px;
-}
-.instr {
+  min-width: 60%;
 }
 .perf {
   line-height: 1.5em;
