@@ -18,7 +18,7 @@ p {
 }
 h1 {
   font-family: 'Raleway', helvetica, sans;
-  font-size: 4.5rem;
+  font-size: 4.5vh;
   margin-bottom: 0.2em;
 }
 h2 {
@@ -88,15 +88,8 @@ ul {
 .footer {
   background-color: #000;
   color: #fff;
-  padding: 2vh 0;
+  padding-top: 2vh;
   text-align: center;
-}
-.footer-nav li {
-  margin-bottom: 0.5vh;
-}
-.footer-nav a:hover,
-.footer-nav a:active {
-  color: #ed6e2f;
 }
 .copyright {
   font-size: 1vh;
@@ -114,17 +107,6 @@ ul {
   box-sizing: border-box;
   height: 40vh;
 }
-/*
-.full-hero:after {
-  bottom: 2vh;
-  color: #fff;
-  content: "﹀";
-  font-size: 48px;
-  left: 50%;
-  position: absolute;
-  transform: translate(-50%, 0);
-}
-*/
 .home-image {
   background-image: url(/zoeawallace/images/ZoeWallace.jpeg);
   background-position: center top;
@@ -133,7 +115,7 @@ ul {
   border-bottom: 1px solid #000;
   color: #000;
   padding-top: 3vh;
-  margin: 0 8.5rem;
+  margin: 0 auto;
   text-align: center;
   width: 70%
 }
@@ -145,7 +127,7 @@ ul {
 
 .bio {
   background-color: #d7d9db;
-  padding: 3vh 8.5rem 2vh;
+  padding: 3vh 8.5vw 2vh;
 }
 .bio h1 {
   font-size: 3vh;
@@ -161,7 +143,6 @@ ul {
 .compositions > div {
   border: 1px solid #000;
 }
-
 .ensemble {
   background-image: url(/zoeawallace/images/ensemble-split.jpeg);
   background-size: cover;
@@ -170,25 +151,9 @@ ul {
   position: relative;
   padding: 2vh 1.7rem;
 }
-
 .ensemble p {
   padding-bottom: 1.2vh;
 }
-
-/*
-.ensemble::before {
-  content: "";
-  background-image: url(/zoeawallace/images/ensemble-split.jpeg);
-  background-size: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: -1;
-}
-*/
-
 .solo {
   background-image: url(/zoeawallace/images/solo-split.jpeg);
   background-position: center;
@@ -198,37 +163,6 @@ ul {
   padding: 2vh 1.7rem;
   position: relative;
 }
- /*
-.solo::after {
-  content: "";
-  background-image: url(/zoeawallace/images/solo-split.jpeg);
-  background-size: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: -1;
-}
-*/
-/*
-.upcoming {
-  padding: 2vh 2vh;
-  position: relative;
-}
-.upcoming::after {
-  content: "";
-  background-image: url(/zoeawallace/images/chicago.jpeg);
-  background-size: cover;
-  opacity: 0.7;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: -1;
-}
-*/
 .works-list {
   padding: 2vh 0 0 1.7rem;
 }
@@ -238,8 +172,8 @@ ul {
 .nightingale {
   background-color: #d7d9db;
   box-sizing: border-box;
-  padding: 4rem 8.5rem;
-  margin-bottom: -2vh;
+  padding: 3vh 9vw 5vh;
+  margin: -3vh auto;
   height: 100%;
   width: 100%;
 }
@@ -307,6 +241,7 @@ ul {
 .description-lg {
   box-sizing: border-box;
   display: block;
+  font-size: 0.95rem;
   float: left;
   height: 100%;
   position: absolute;
@@ -315,10 +250,8 @@ ul {
   transform: translate(0, -35%);
   width: 38%;
 }
-.description-lg {
-  font-size: 0.95rem;
-}
-.description h2 {
+.description h2,
+.description-lg h2 {
   margin-bottom: 1.5vh;
 }
 .media {
@@ -341,12 +274,65 @@ ul {
     margin: 0 auto;
   }
 }
-
 @media (max-width: 900px) {
+  p {
+    font-size: 1.5vh;
+  }
   .ensemble {
     background-image: url(/zoeawallace/images/ensemble-fade.jpeg);
   }
   .solo {
     background-image: url(/zoeawallace/images/solo-fade.jpeg);
   }
+}
+@media (max-width: 600px) {
+  h1 {
+    font-size: 5vh;
+  }
+  p {
+    font-size: 1.9vh;
+  }
+  .media-row {
+    border-top: 1px solid #000;
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+  }
+  .description {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3vh;
+    position: relative;
+    text-align: center;
+    top: 30%;
+    transform: translate(0, 10%);
+    width: 100%;
+  }
+  .description-lg {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    top: 5%;
+    transform: translate(0, 0);
+    width: 100%;
+  }
+  .description h2,
+  .description-lg h2 {
+    margin-bottom: 1.5vh;
+  }
+  .media {
+    display: flex;
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+  }
+  .media iframe {
+  position: absolute;
+  height: 100%;
+ }
 }
