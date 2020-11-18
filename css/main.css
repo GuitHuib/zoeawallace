@@ -12,13 +12,13 @@ a {
   text-decoration: none;
 }
 p {
-  font-size: 1.2vh;
+  font-size: 1rem;
   line-height: 2em;
   padding-bottom: 3vh;
 }
 h1 {
   font-family: 'Raleway', helvetica, sans;
-  font-size: 4.5vh;
+  font-size: 3.4rem;
   margin-bottom: 0.2em;
 }
 h2 {
@@ -34,7 +34,7 @@ ul {
   display: flex;
   flex-direction: column;
   flex: 1 1 auto;
-  padding: 7.2vh 0 0 0;
+  padding: 7.2vh 0 0;
   width: 100%;
   margin: 0 auto;
 }
@@ -112,7 +112,6 @@ ul {
   background-position: center top;
 }
 .home-content {
-  border-bottom: 1px solid #000;
   color: #000;
   padding-top: 3vh;
   margin: 0 auto;
@@ -127,26 +126,28 @@ ul {
 
 .bio {
   background-color: #d7d9db;
-  padding: 3vh 8.5vw 2vh;
+  border-top: 1px solid #000;
+  margin: 0 8.5vw;
+  padding: 3vh 1vw 2vh;
 }
 .bio h1 {
-  font-size: 3vh;
   text-align: center;
-  margin: 2vh 0;
 }
 
 /* COMPOSITION STYLES */
 
 .compositions {
   box-sizing: border-box;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 .compositions > div {
   border: 1px solid #000;
 }
 .ensemble {
   background-image: url(/zoeawallace/images/ensemble-split.jpeg);
-  background-size: cover;
   background-position: center;
+  background-size: cover;
   color: #000;
   position: relative;
   padding: 2vh 1.7rem;
@@ -156,7 +157,7 @@ ul {
 }
 .solo {
   background-image: url(/zoeawallace/images/solo-split.jpeg);
-  background-position: center;
+  background-position: top;
   background-size: cover;
   box-sizing: border-box;
   color: #000;
@@ -178,13 +179,13 @@ ul {
   width: 100%;
 }
 .nightingale-logo img {
-  width: 95%;
+  width: 85%;
 }
 .nightingale-info {
   border-bottom: 1px solid #000;
   border-top: 1px solid #000;
   margin-top: 3vh;
-  padding: 3vh 0 0 0;
+  padding: 3vh 1vw 0;
 }
 .poem {
   border-bottom: 1px solid #000;
@@ -273,10 +274,17 @@ ul {
     max-width: 1100px;
     margin: 0 auto;
   }
+  .bio {
+    margin: 0 6.5vw;
+    padding: 3vh 1vw 2vh;
+  }
+  .nightingale {
+    padding: 3vh 6.5vw 5vh;
+  }
 }
 @media (max-width: 900px) {
   p {
-    font-size: 1.5vh;
+    font-size: 0.9rem;
   }
   .ensemble {
     background-image: url(/zoeawallace/images/ensemble-fade.jpeg);
@@ -290,7 +298,7 @@ ul {
     font-size: 5vh;
   }
   p {
-    font-size: 1.9vh;
+    font-size: 0.7rem;
   }
   .media-row {
     border-top: 1px solid #000;
