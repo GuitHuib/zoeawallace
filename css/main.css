@@ -31,6 +31,7 @@ ul {
   font-style: italic;
 }
 .content-container {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   flex: 1 1 auto;
@@ -339,7 +340,7 @@ ul {
     display: block;
     font-weight: bold;
     margin-top: 1vh;
-    padding: 0.8em;
+    padding: 2.5vh 0;
     position: relative;
     text-align: center;
     text-transform: uppercase;
