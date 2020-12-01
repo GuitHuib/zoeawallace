@@ -118,8 +118,11 @@ ul {
 }
 .home-image {
   background-image: url(/zoeawallace/images/ZoeWallace.jpeg);
-  background-position: center top;
+  background-position: center center;
+  margin-top: 6.5vh;
+  min-height: 20em;
 }
+
 .home-content {
   color: #000;
   padding-top: 3vh;
@@ -146,26 +149,27 @@ ul {
 /* COMPOSITION STYLES */
 
 .compositions {
+  background-color: #d7d9db;
   box-sizing: border-box;
   margin-bottom: 0;
   padding-bottom: 0;
 }
 .compositions > div {
-  border: 1px solid #000;
+  border-bottom: 1px solid #000;
 }
 .ensemble {
-  background-image: url(/zoeawallace/images/ensemble-split.jpeg);
+  background-image: url(/zoeawallace/images/ensemble_fade.jpeg);
   background-position: center;
   background-size: cover;
   color: #000;
   position: relative;
-  padding: 2vh 1.7rem;
+  padding: 3vh 1.7rem;
 }
 .ensemble p {
   padding-bottom: 1.2vh;
 }
 .solo {
-  background-image: url(/zoeawallace/images/solo-split.jpeg);
+  background-image: url(/zoeawallace/images/solo_fade.jpeg);
   background-position: top;
   background-size: cover;
   box-sizing: border-box;
@@ -322,10 +326,10 @@ ul {
     font-size: 0.9rem;
   }
   .ensemble {
-    background-image: url(/zoeawallace/images/ensemble-fade.jpeg);
+    background-image: url(/zoeawallace/images/ensemble_fade.jpeg);
   }
   .solo {
-    background-image: url(/zoeawallace/images/solo-fade.jpeg);
+    background-image: url(/zoeawallace/images/solo_fade.jpeg);
   }
 }
 @media (max-width: 600px) {
