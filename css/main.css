@@ -151,34 +151,52 @@ ul {
 .compositions {
   background-color: #d7d9db;
   box-sizing: border-box;
+  line-height: 1.8em;
   margin-bottom: 0;
   padding-bottom: 0;
 }
-.compositions > div {
-  border-bottom: 1px solid #000;
-}
 .ensemble {
-  background-image: url(/zoeawallace/images/ensemble_fade.jpeg);
-  background-position: center;
-  background-size: cover;
-  color: #000;
-  position: relative;
-  padding: 3vh 1.7rem;
+  display: flex;
+  flex-direction: column;
+  padding-top: 5vh;
+}
+.comp-cat {
+  font-weight: lighter;
+  margin-bottom: 1.8vh;
+  text-align: center;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+.comp-list {
+  display: flex;
+  flex-direction: column;
+  padding: 2vh 2.5rem 0;
+}
+.comp {
+  border-bottom: 1px solid #000;
+  display: flex;
+  flex-direction: row;
+  padding: 1rem 1.5rem;
+}
+.comp:hover {
+  background-color: #bfc3c7;
+}
+.comp-title {
+  flex: 1;
+  font-size: 1.2rem;
+}
+.comp-info {
+  display: flex;
+  font-weight: lighter;
+  padding-right: 3rem;
+  text-align: right;
 }
 .ensemble p {
   padding-bottom: 1.2vh;
 }
 .solo {
-  background-image: url(/zoeawallace/images/solo_fade.jpeg);
-  background-position: top;
-  background-size: cover;
-  box-sizing: border-box;
-  color: #000;
-  padding: 2vh 1.7rem;
-  position: relative;
-}
-.works-list {
-  padding: 2vh 0 0 1.7rem;
+  padding-top: 6vh;
+  padding-bottom: 6vh;
 }
 
 /* NIGHTINGALE STYLES */
@@ -321,17 +339,7 @@ ul {
     padding: 3vh 6.5vw 5vh;
   }
 }
-@media (max-width: 900px) {
-  p {
-    font-size: 0.9rem;
-  }
-  .ensemble {
-    background-image: url(/zoeawallace/images/ensemble_fade.jpeg);
-  }
-  .solo {
-    background-image: url(/zoeawallace/images/solo_fade.jpeg);
-  }
-}
+
 @media (max-width: 600px) {
   h1 {
     font-size: 5vh;
@@ -339,6 +347,8 @@ ul {
   p {
     font-size: 0.7rem;
   }
+
+  /* MOBILE MENU */
   .show-mobile-menu {
     color: #fff;
     display: block;
@@ -374,6 +384,24 @@ ul {
   .mobile-menu-check:checked ~ .header-nav {
     max-height: 1000px;
   }
+  /* MOBILE COMP PAGE */
+  .comp {
+    display: block;
+    text-align: center;
+  }
+  .comp-cat {
+    line-height: 2.2rem;
+  }
+  .comp-info {
+    display: block;
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 0;
+  }
+  .comp-list {
+    padding: 0;
+  }
+  /* MOBILE MEDIA PAGE */
   .media-row {
     border-top: 1px solid #000;
     display: flex;
