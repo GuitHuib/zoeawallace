@@ -3,7 +3,12 @@
   {% if page.title %}
     <title>{{ page.title }} | Zoë Wallace</title>
   {% else %}
-    <title>Zoe Wallace</title>
+    <title>Zoë A. Wallace | Composer</title>
+  {% endif %}
+  {% if page.description %}
+    <meta name="description" content="{{ page.description }}">
+  {% else %}
+    <meta name="description" content="Contemporary Classical Music Composer">
   {% endif %}
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="preconnect" href="https://fonts.gstatic.com">
