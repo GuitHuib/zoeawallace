@@ -74,6 +74,10 @@ ul {
   text-transform: uppercase;
 }
 
+.nav-links a:hover {
+  cursor: pointer;
+}
+
 /* MOBILE MENU STYLES */
 
 .mobile-menu-check,
@@ -279,8 +283,8 @@ ul {
   position: absolute;
   text-align: center;
   top: 50%;
-  transform: translate(0, -35%);
   width: 38%;
+  vertical-align: center;
 }
 .description h2,
 .description-lg h2 {

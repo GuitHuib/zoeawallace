@@ -3,15 +3,30 @@ layout: default
 title: Compositions
 photo_credit: Photos courtesy of Zoë Wallace
 ---
-
 <div class="compositions">
 
   <div class="ensemble">
     <div class="comp-cat">
       <h2>Ensemble and Duet Works</h2>
     </div>
-
     <div class="comp-list">
+      {% include composition.html name="A Jelly-Fish (2023)"
+                 instrumentation="- for Soprano and Double Bass" %}
+
+      {% include composition.html name="Sunflower/Light (2023)"
+                 instrumentation="- for Voice and Viola" %}
+
+      {% include composition.html name="Phantasmagoria (2023)"
+                 instrumentation="- for Violin, Cello, Flute, Clarinet, Piano, and Electronics" %}
+
+      {% include composition.html name="Down the Rabbit Hole (2022)"
+                 instrumentation="- for at least 4 instruments" %}
+
+      {% include composition.html name="Medusa (2022)"
+                 instrumentation="- for Voice and Piano" %}
+
+      {% include composition.html name="String Quartet no. 3: Here (2021)"
+                 instrumentation="- for two violins, viola, and cello" %}
 
       {% include composition.html name="String Quartet no. 2 (2021)"
                  instrumentation="- for two violins, viola, and cello" %}
@@ -37,7 +52,6 @@ photo_credit: Photos courtesy of Zoë Wallace
 
       {% include composition.html name="Erebus (2016)"
                  instrumentation="- for electronics, cello, and electric guitar" %}
-
     </div>
   </div>
 
@@ -45,8 +59,13 @@ photo_credit: Photos courtesy of Zoë Wallace
     <div class="comp-cat">
       <h2>Solo Works</h2>
     </div>
-
     <div class="comp-list">
+      {% include composition.html name="Lunette (2023)"
+                 instrumentation="- for solo Guitar" %}
+      
+      {% include composition.html name="Ripple and Stillwater (2022)"
+                 instrumentation="- for solo Harp" %}
+
       {% include composition.html name="Waits. Dreaming. (2016)"
                  instrumentation="- for solo piano" %}
 
