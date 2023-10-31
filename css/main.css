@@ -171,6 +171,14 @@ ul {
   text-decoration: underline;
   text-transform: uppercase;
 }
+.comp-cat a {
+  color: black;
+  text-transform: none;
+}
+.comp-cat a:hover {
+  color: black;
+  cursor: pointer;
+}
 .comp-list {
   display: flex;
   flex-direction: column;
